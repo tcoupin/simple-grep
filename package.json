@@ -1,0 +1,25 @@
+{
+  "name": "simple-grep",
+  "version": "0.0.1",
+  "description": "easy grep utlity for node.js",
+  "main": "simple-grep.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BSteephenson/simple-grep.git"
+  },
+  "keywords": [
+    "grep",
+    "search"
+  ],
+  "author": "Benjamin Steephenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BSteephenson/simple-grep/issues"
+  },
+  "homepage": "https://github.com/BSteephenson/simple-grep",
+  "dependencies": {
+  }
+}
