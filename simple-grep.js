@@ -14,7 +14,15 @@ var grep = function(what, where, callback){
 	    }
 	    for (var i = 0; i < results.length; i++) {
 	    	var eachPart = results[i].split(':') //file:linenum:line
-	    	list[eachPart[0]].push({'line_number' : eachPart[1], 'line' : eachPart[2]})
+	    	var details = {}
+	    	var filename = eachPart[0]
+	    	details['line_number'] = eachPart[1]
+	    	
+	    	eachPart.shift()
+	    	eachPart.shift()
+	    	details['line'] = eachPart.join(':')
+
+	    	list[filename].push(details)
 	    }
 
 
