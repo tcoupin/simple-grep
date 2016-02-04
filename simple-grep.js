@@ -1,7 +1,7 @@
 var grep = function(what, where, callback){
 	var exec = require('child_process').exec;
 
-	exec("grep " + what + " " + where + " -nr", function(err, stdin, stdout){
+	exec("grep " + what + " " + where + " -nrH", function(err, stdin, stdout){
 		var list = {}
 
 		var results = stdin.split('\n');
